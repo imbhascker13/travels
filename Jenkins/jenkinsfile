@@ -23,7 +23,7 @@ node {
    sh label: '', script: 'mvn test'
   }
   stage('Sonar Analysis'){
-        withSonarQubeEnv('Sonarqube'){
+        withSonarQubeEnv('SonarQube'){
          sh 'mvn sonar:sonar'
         }
         }
